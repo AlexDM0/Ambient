@@ -1,0 +1,12 @@
+{
+  "name": "application-name",
+  "version": "0.0.1",
+  "dependencies": {
+    "ejs": "^1.0.0",
+    "evejs": "^0.4.3",
+    "express": "^4.9.8",
+    "promise": "^6.0.1",
+    "serialport": "^1.4.9",
+    "vis": "^3.5.0"
+  }
+}

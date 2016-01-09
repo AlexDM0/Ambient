@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head lang='en'>
+    <meta charset='UTF-8'>
+    <title></title>
+    <style>
+        html, body {
+            width: 100%;
+            height: 100%;
+            margin: 0px;
+            padding: 0px;
+            background-color:#ffffff;
+        }
+
+        div.elementWrapper {
+            display:block;
+            background-color:#ffffff;
+            border-radius:20px;
+            margin-top:10px;
+            padding:10px;
+            width:310px;
+            line-height:50px;
+        }
+
+    </style>
+    <link href='./css/RCstyles.css' type='text/css' rel='stylesheet'>
+    <link href='./css/input.css' type='text/css' rel='stylesheet'>
+    <link href='./css/colorwheel.css' type='text/css' rel='stylesheet'>
+
+    <script src='./js/util.js'></script>
+    <script src='./js/eve.js'></script>
+    <script src='./js/colorWheel.js'></script>
+    <script src='./js/agents/lightAgent.js'></script>
+    <script src='./js/agents/aquariumAgent.js'></script>
+    <script src='./js/agents/proxyAgent.js'></script>
+    <script src='./js/hammer.min.js'></script>
+    <script src='./js/item.js'></script>
+    <script src='./js/roomController.js'></script>
+
+    <script src='js/init.js'></script>
+
+
+</head>
+<body onload="onLoad()">
+<div id="fullWrapper">
+    <div id="wrapper">
+        <div id='global'>
+            <br /><br />
+            <div id="colorwheelContainer"></div>
+            <div class="elementWrapper">
+                <div class="header">
+                    Select a preset:
+                </div>
+                <div>
+                    <select id="globalPresetSelector">
+                        <option>custom</option>
+                        <option>red</option>
+                        <option>green</option>
+                        <option>blue</option>
+                        <option>normal</option>
+                        <option>candles</option>
+                    </select>
+                </div>
+            </div>
+            <div class="elementWrapper">
+                <div class="header">
+                    Set the overall brightness:
+                </div>
+                <input type="range" min="0" max="100" value="100" style="width:300px;">
+            </div>
+
+        </div>
+        <div id='container'></div>
+    </div>
+</div>
+</body>
+</html>
